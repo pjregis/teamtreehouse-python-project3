@@ -47,7 +47,7 @@ class Game:
                     continue
                 if user_guess == '':
                     continue
-                if user_guess not in string.ascii_lowercase:
+                if user_guess not in string.ascii_lowercase or len(user_guess) > 1:
                     print('Invalid input. Try again.')
                 else:
                     break
